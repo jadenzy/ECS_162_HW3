@@ -1,4 +1,3 @@
-<!-- CommentItem.svelte -->
 <script>
     import CommentItem from './CommentItem.svelte';
     export let comment;
@@ -7,11 +6,9 @@
     export let onReply;
     export let onDelete;
     export let onRedact;
-    export let getReplies; // A function to fetch replies for a given comment ID
+    export let getReplies; 
   </script>
 
-  
-  
   <div class="comment">
     <strong>{comment.user}</strong>:
     {comment.redacted_text ? comment.redacted_text : comment.text}

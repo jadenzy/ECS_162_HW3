@@ -1,0 +1,5 @@
+All asked ChatGPT 
+1. Ask how to use the app.py, as well as the usage of different componments in dex.yaml 
+2. Ask how to create a login button corresponding to the /login api, and change the route ('/') dirent to localhost:5173
+3. Ask how to do nested reply, and create a additional CommentItem.svelte file to render all the needed functions for comments 
+4. Ask how to use POST, DELETE, GET, PATCH method with '/api/comments' as well as in the frontend 

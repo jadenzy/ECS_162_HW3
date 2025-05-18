@@ -41,14 +41,14 @@
 
   async function postComment() {
     if (!newCommentText.trim()) return;
-        await fetch('/api/comments', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        article_id: selectedArticle._id, 
-        text: newCommentText, 
-        parent_id: replyTo 
-      }),
+      await fetch('/api/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          article_id: selectedArticle._id, 
+          text: newCommentText, 
+          parent_id: replyTo 
+        }),
     });
     newCommentText = '';
     replyTo = null;
