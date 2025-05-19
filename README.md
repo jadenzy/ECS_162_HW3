@@ -71,14 +71,6 @@
     - "parent_id": if it contains a parent reply 
   - Move the fetch articles to flask instead of frontend 
 
-### `/test`
 
-- **`test_app.py`**
-  - Tests a `GET` request to `/api/key`
-    - Checks for **status code 200** and **JSON format**
-  - Mocks `fake.txt` with `app.send_from_directory()`:
-    - Verifies the path exists
-    - Sends a `GET` request to `fake.txt`
-    - Checks if **status code 200** is returned
     
 
